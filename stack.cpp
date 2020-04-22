@@ -19,11 +19,13 @@ bool isbottom(int* t) {
 }
 
 int push(char s[], int* t, char item) {
-	if(*t<S) {
-		++*t;
-		s[*t]=item;
-		return 1;
-	} else return 0;
+        if(*t==S-1)
+                return 0;
+        else    {
+                ++*t;
+                s[*t]=item;
+                return 1;
+        }
 }
 
 int pop(char s[], int* t) {
@@ -73,3 +75,4 @@ int main(int argc,char* argv[]) {
 	return 0;
 }
 
+hi git
